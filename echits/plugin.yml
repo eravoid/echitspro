@@ -1,0 +1,15 @@
+name: echits
+version: '1.0-SNAPSHOT'
+main: EraVoid
+api-version: '1.21'
+author: "EraVoid"
+
+description: this plugin for other server ip spawmers and ruds words and flooding
+ not use plugins all perms are owner devloper admin this dev bye eravoid DISCORD ID eravoid.exe
+
+commands
+ echits:
+   description: Main command for echits plugin
+   usage: /<command> [reload|toggle|info|help] 
+   permission: echits.admin
+   aliases: [echits, as]

@@ -1,0 +1,120 @@
+# Echits Configuration
+# Author: EraVoid
+
+#Chat spawm prevention settings
+chat:
+    # Cooldown between messages in seconds
+  message-cooldown: 5
+
+
+  # Cooldown for similar messages in seconds
+  similar-message-cooldown: 20
+
+  # Maximum message length
+  max-message-length: 100
+
+  #Caps limit settings
+  max-message-length: 250
+
+  #Caps limit settings
+  cap-limit
+  enabled: true
+  # Maximum percentage of capital letters allowed
+  percentage: 90
+  # Minimum message length to check for caps
+  min-message-length: 5
+
+
+# URL Filter settings
+url-filter
+enabled: true
+
+# IP address filter settings
+ip-filter:
+   enabled: true
+
+#Text filter settings
+text-filter:
+   enabled: true
+
+# Command spam prevention settings
+commands:
+  # Cooldown between commands in seconds
+  cooldown: 2
+  
+  # List of blocked commands
+  blocked-commands:
+    - "pl"
+    - "plugins"
+    - "bukkit:pl"
+    - "bukkit:plugins"
+    - "ver"
+    - "version"
+    - "bukkit:ver"
+    - "bukkit:version"   
+    # Add more commands as needed
+
+# Swear filter setting
+Swear-filter
+enabled: true
+# Allow players with antispam.bypass.swear permission to bypass swear filter
+bypass-with-permission: true
+   words:
+   - "badword1"
+   - "badword2"
+   - "badword3"
+   # Add more words as needed
+
+# Flood protection settings
+flood-protection:
+  enabled: true
+  # Number of messages that trigger flood protection
+  message-threshold: 5
+  # Time window in seconds for flood detection
+  time-window-seconds: 10
+
+# Punishment settings
+punishments:
+  enabled: true
+  # Number of warnings before muting a player
+  warnings-before-mute: 3
+  # Mute duration in seconds
+  mute-duration-seconds: 60
+  # Enable kicking players for excessive spam
+  enable-kick: false
+  # Number of warnings before kicking a player
+  warnings-before-kick: 5
+
+# Message settings
+messages:
+  # Plugin prefix (supports hex colors with #RRGGBB format)
+  prefix: "#FF0000echits &8» &r"  
+
+ # Custom messages (supports hex colors and gradients)
+  custom:
+    # General messages
+    no-permission: "&cYou don't have permission to use this command!"
+    config-reloaded: "&aConfiguration has been reloaded successfully!"
+    plugin-toggle: "&aPlugin has been %status%!"
+    admin-welcome: "<gradient:#FF0000:#FFAA00>Welcome %player%! echits v%version% is active.</gradient>"  
+
+    # Chat filter messages
+    cooldown: "&cPlease wait &e%time%s &cbefore sending another message!"
+    repeat-message: "&cYou cannot repeat the same message for &e%time%s&c!"
+    too-many-caps: "&cPlease don't use too many capital letters!"
+    swear-word-detected: "&cYour message contains inappropriate language!"
+    url-blocked: "&cYour message contains a URL which is not allowed!"
+    ip-blocked: "&cYour message contains an IP address which is not allowed!"
+    message-too-long: "&cYour message is too long! Maximum length is &e%max% &ccharacters."
+    
+    # Command filter messages
+    command-cooldown: "&cPlease wait &e%time%s &cbefore using commands again!"
+    command-blocked: "&cThis command is blocked by the server!"
+    
+    # Punishment messages
+    warning: "&cWarning &e%count%/%max%&c: You are sending messages too quickly!"
+    muted: "&cYou have been muted for &e%time%s &cdue to spam!"
+    kick-message: "&c&lYou have been kicked for excessive spam!\n\n&7Please wait before rejoining."
+    flood-detected: "&cFlood detected! Please slow down your messages."    
+  
+  
